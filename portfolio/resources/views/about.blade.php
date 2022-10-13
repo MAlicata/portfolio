@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About</title>
-</head>
-<body>
-   
-    @include('partials.navigation')
-    <h3>About 😲</h3>
-</body>
-</html>
+@extends('layouts.app')
+
+@section('title', 'About')
+@section('meta-description', 'About meta description')
+
+
+@section('content')    
+<h3>About 😲</h3>
+@endsection
+

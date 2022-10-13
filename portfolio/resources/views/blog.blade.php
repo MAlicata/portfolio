@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Blog</title>
-</head>
-<body>
-    
-    @include('partials.navigation')
+@extends('layouts.app')
+
+@section('title', 'Blog')
+@section('meta-description', 'Blog meta description')
+
+
+@section('content')
     <h3>Blog 😎</h3>
-</body>
-</html>
+@endsection
