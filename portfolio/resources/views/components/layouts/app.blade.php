@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My first app -@yield('title')</title>
-    <meta name="description" content="@yield('meta-description', 'Default meta description')"/>
+    <title>My first app -{{ $title ?? ''}}</title>
+    <meta name="description" content="{{ $metaDescription ?? 'Default meta description' }}" />
 </head>
-@include('partials.navigation')
-
-
-@yield('content')
+<x-layouts.navigation />
+{{ $slot }}
 
 </body>
 </html>

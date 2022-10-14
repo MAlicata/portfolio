@@ -1,10 +1,8 @@
-@extends('layouts.app')
-
-@section('title', 'About')
-@section('meta-description', 'About meta description')
-
-
-@section('content')    
-<h3>About 😲</h3>
-@endsection
-
+{{-- @component('components.layout') --}}
+<x-layouts.app
+    title="About" 
+    meta-description="About meta description"
+>
+    <h3>About</h3>
+</x-layouts.app>
+{{-- @endcomponent --}}
