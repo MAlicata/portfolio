@@ -8,6 +8,13 @@
     <meta name="description" content="{{ $metaDescription ?? 'Default meta description' }}" />
 </head>
 <x-layouts.navigation />
+
+@if(session('status'))
+<div>
+    {{ session('status') }}
+</div>
+@endif
+
 {{ $slot }}
 
 </body>
